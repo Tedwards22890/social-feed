@@ -3,17 +3,17 @@ import PostEntry from './Components/PostText/PostEntry'
 
 function App() {
 
-  const [entries, setEntries] = useState([{name: 'test1', post: 'message1'}, {name: 'test', post: 'message2'}])
+  const [posts, setPosts] = useState([{name: 'test1', post: 'message1'}, {name: 'test', post: 'message2'}])
 
-  function addNewPost(entry){
+  function addNewPost(post){
     let tempPost = [posts, post];
 
-    setPost(tempPost);
+    setPosts(tempPost);
   }
 
   return (
     <div>
-      <PostEntry />
+      <PostEntry addNewPostProperty={addNewPost} />
 
     </div>
   );

@@ -1,6 +1,20 @@
 import React, { useState } from 'react';
 
 const PostEntry = (props) => {
+
+    const [name, setName] = useState('');
+    const [post, setPost] = useState('');
+
+    function handleSubmit(event) {
+        event.preventDefault();
+        let newPost = {
+            name: name,
+            post: post,
+        };
+        console.log({newPost});
+        props.addNewPostProperty(newPost);
+    }
+
     return ( 
         <form onSubmit={handleSubmit}>
             <label>Name</label>
