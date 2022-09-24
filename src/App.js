@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import PostEntry from './Components/PostText/PostEntry'
+import DisplayPosts from './Components/DisplayPosts/DisplayPosts';
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
   return (
     <div>
       <PostEntry addNewPostProperty={addNewPost} />
+      <DisplayPosts parentPosts={posts}/>
 
     </div>
   );
