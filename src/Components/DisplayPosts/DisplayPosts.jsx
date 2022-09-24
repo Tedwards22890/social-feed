@@ -1,6 +1,6 @@
 const DisplayPosts = (props) => {
     return ( 
-        <table>
+        <table className="table">
             <thead>
                 <tr>
                     <th>Name</th>
@@ -8,13 +8,13 @@ const DisplayPosts = (props) => {
                 </tr>
             </thead>
             <tbody>
-                {props.parentPosts.map((post, index) => {
+                {props.parentPosts.map((post, i) => {
                     return (
-                        <tr key={index}>
-                            <td>{post.name}</td>
-                            <td>{post.post}</td>
-                        </tr>
-                    );
+                    <tr key={i}>
+                        <td>{post.name}</td>
+                        <td>{post.post}</td>
+                    </tr>
+                );
                 })}
             </tbody>
         </table>
