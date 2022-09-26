@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import PostEntry from './Components/PostText/PostEntry'
 import DisplayPosts from './Components/DisplayPosts/DisplayPosts';
-import Post from './Components/DisplayPosts/Post';
 import "./App.css";
 
 function App() {
