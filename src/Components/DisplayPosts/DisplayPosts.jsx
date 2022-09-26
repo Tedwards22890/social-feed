@@ -16,7 +16,7 @@ const DisplayPosts = (props) => {
                 </div>
             
                 <div className="posts">
-                    {date}
+                    <b>{date}</b>
                     <br />
                     {posts.post}                    
                 </div>
