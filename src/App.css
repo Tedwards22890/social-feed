@@ -2,5 +2,20 @@
     border: 1px;
     border-style: solid;
     border-color: black;
-
 }
+
+.center {
+    margin: auto;
+    width: 50%;
+    border: 3px solid gray;
+    padding: 10px;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 1px;
+    grid-row-gap: 1px;
+    justify-content: center;
+} 

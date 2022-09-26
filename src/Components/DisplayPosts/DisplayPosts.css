@@ -1,0 +1,28 @@
+.parent {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 1px;
+    grid-row-gap: 1px;
+    justify-content: center;
+    background-color: rgb(172, 239, 170);
+} 
+.name {
+    border: 1px;
+    border-style: solid;
+    background-color: rgb(255, 255, 255);
+    border-color: black;
+    width: 50%;
+    height: 3em;
+    border-radius: 25px;
+}
+
+.posts {
+    border: 1px;
+    border-style: solid;
+    background-color: rgb(255, 255, 255);
+    border-color: black;
+    width: 50%;
+    height: 10em;
+    border-radius: 25px;
+}

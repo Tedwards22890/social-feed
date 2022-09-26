@@ -11,17 +11,32 @@ const PostEntry = (props) => {
             name: name,
             post: post,
         };
-        console.log({newPost});
-        props.addNewPostProperty(newPost);
+        if (name===''|| post==='')
+        {
+            alert('Please be sure all fields are filled out!')
+        }
+        else 
+        {
+            console.log({newPost});
+            props.addNewPostProperty(newPost);
+            setName("")
+            setPost("")
+        }
     }
 
     return ( 
         <form onSubmit={handleSubmit}>
+            <center>
             <label>Name</label>
-            <input type="text" value={name} onChange={(event) => setName(event.target.value)}/>
+            <br/>
+            <input type="text" placeholder="Name" value={name} onChange={(event) => setName(event.target.value)}/>
+            <br/>
             <label>Post</label>
-            <input type="text" rows="12" cols="50" value={post} onChange={(event) => setPost(event.target.value)}/>
+            <br/>
+            <textarea placeholder="Message" value={post} onChange={(event) => setPost(event.target.value)}></textarea>
+            <br/>
             <button type="submit">Create</button>
+            </center>
         </form>
      );
 }
