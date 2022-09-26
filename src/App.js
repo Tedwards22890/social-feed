@@ -7,6 +7,7 @@ function App() {
 
   const [posts, setPosts] = useState([{name: 'Admin', post: 'Be sure to keep messages clean!'}])
 
+
   function addNewPost(post){
     let tempPost = [...posts, post];
 
@@ -17,7 +18,7 @@ function App() {
     <div className="parent">   
       <PostEntry addNewPostProperty={addNewPost} />   
       <DisplayPosts parentPosts={posts}/>
-      </div>
+    </div>
   );
 }
 

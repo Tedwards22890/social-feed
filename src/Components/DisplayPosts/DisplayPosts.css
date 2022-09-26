@@ -12,9 +12,12 @@
     border-style: solid;
     background-color: rgb(255, 255, 255);
     border-color: black;
-    width: 50%;
-    height: 3em;
-    border-radius: 25px;
+    width: 25%;
+    height: 1em;
+    border-radius: 5px;
+    font-size:large;
+    font-weight:bold;
+    
 }
 
 .posts {
@@ -22,7 +25,12 @@
     border-style: solid;
     background-color: rgb(255, 255, 255);
     border-color: black;
-    width: 50%;
+    width: 75%;
     height: 10em;
-    border-radius: 25px;
+    border-radius: 5px;
+    text-align:left;
+}
+
+.like {
+    text-align:center;
 }
