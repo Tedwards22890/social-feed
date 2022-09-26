@@ -17,7 +17,7 @@ function App() {
     <div className="parent">   
       <PostEntry addNewPostProperty={addNewPost} />   
       <DisplayPosts parentPosts={posts}/>
-    </div>
+      </div>
   );
 }
 

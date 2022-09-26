@@ -1,6 +1,6 @@
 import "./DisplayPosts.css";
 import React from 'react';
-
+import MediaButtons from "./MediaButtons";
 
 const DisplayPosts = (props) => {
     return ( 
@@ -15,6 +15,8 @@ const DisplayPosts = (props) => {
             
                 <div className="posts">
                     {posts.post}
+                    <MediaButtons />
+                    
                 </div>
             
             </center>
